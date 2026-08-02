@@ -1,6 +1,6 @@
 questo sito sarà disponibile a breve
 
-<!--
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -44,6 +44,60 @@ questo sito sarà disponibile a breve
         Hai spunti di miglioramento o idee per altre battute? Premi qui per condividerli.
 </a>
 
+
+/* Contenitore flessibile */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Stile base dei pulsanti */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effetto al passaggio del mouse/click */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Colori personalizzati per ogni categoria */
+.btn-tech { background-color: #2b5c8f; }
+.btn-scienza { background-color: #2e7d32; }
+.btn-cibo { background-color: #e65100; }
+.btn-battutestupefacenti { background-color: #6a1b9a; }
+
+
+<div class="button-container">
+  <a href="/tech/" class="btn btn-tech">
+    <span>💻</span> Battute Tech
+  </a>
+  <a href="/scienza/" class="btn btn-scienza">
+    <span>🔬</span> Scienza & Matematica
+  </a>
+  <a href="/cibo/" class="btn btn-cibo">
+    <span>🍕</span> Cibo & Cucina
+  </a>
+  <a href="/stupefacenti/" class="btn btn-battutestupefacenti">
+    <span>🤪</span> Battute Stupefacenti
+  </a>
+</div>
+
+
 <div style="text-align: center; margin: 40px 0;">
     <a href="https://jonathanbascellibackup-design.github.io/bascelli-store/" style="
         background: #00d2ff; color: #ffffff; border: 3px solid #00d2ff; padding: 30px 100px; 
@@ -86,4 +140,4 @@ questo sito sarà disponibile a breve
     </div>
 </div>
 
--->
+
